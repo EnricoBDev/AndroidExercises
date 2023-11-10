@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BTNColoriListeners</string>
+    <string name="textView1">Prima text view</string>
+    <string name="textView2">Seconda text view</string>
+    <string name="textView3">Terza text view</string>
+    <string name="button1">Primo button</string>
+    <string name="button2">Secondo button</string>
+    <string name="button3">Terzo button</string>
+</resources>
