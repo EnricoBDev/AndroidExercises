@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onClick(View view) {
                 TXV_2.setText(String.valueOf(TXV_2.getId()));
                 TXV_2.setBackgroundColor(Color.GREEN);
+                Toast.makeText(MainActivity.this, String.valueOf(TXV_2.getId()), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -41,11 +42,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void pigiami(View view){
         TXV_1.setText(String.valueOf(TXV_1.getId()));
         TXV_1.setBackgroundColor(Color.RED);
+        Toast.makeText(MainActivity.this, String.valueOf(TXV_1.getId()), Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onClick(View view) {
         TXV_3.setText(String.valueOf(TXV_3.getId()));
         TXV_3.setBackgroundColor(Color.BLUE);
+        Toast.makeText(MainActivity.this, String.valueOf(TXV_3.getId()), Toast.LENGTH_SHORT).show();
     }
 }
