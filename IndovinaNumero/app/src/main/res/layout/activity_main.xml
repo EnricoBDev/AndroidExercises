@@ -4,15 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    android:id="@+id/CLYT">
 
     <TextView
+        android:id="@+id/TXV_hint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Inserisci un numero da 1 a 10"
+        android:layout_marginBottom="400dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETX_inserimento"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        android:hint="@string/ETX_hint"
+        app:layout_constraintTop_toBottomOf="@+id/TXV_hint"
+        app:layout_constraintStart_toStartOf="@id/TXV_hint"
+        app:layout_constraintEnd_toEndOf="@id/TXV_hint" />
+
+    <Button
+        android:id="@+id/BTN_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/BTN_text"
+        app:layout_constraintStart_toStartOf="@id/ETX_inserimento"
+        app:layout_constraintEnd_toEndOf="@id/ETX_inserimento"
+        app:layout_constraintTop_toBottomOf="@id/ETX_inserimento"
+
+        />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">IndovinaNumero</string>
+    <string name="ETX_hint">Inserisci il numero</string>
+    <string name="BTN_text">Invia</string>
 </resources>
